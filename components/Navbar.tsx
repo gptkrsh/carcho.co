@@ -1,4 +1,3 @@
-"use client";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import {
@@ -91,7 +90,7 @@ export default function Navbar() {
               ) : (
                 <button
                   type="button"
-                  onClick={() => signIn("auth0'")}
+                  onClick={() => signIn("auth0")}
                   className="flex justify-between items-center rounded px-3 py-2 text-sm font-medium hover:bg-slate-700"
                 >
                   Login

@@ -12,7 +12,7 @@ export const authOptions: AuthOptions = {
       issuer: process.env.AUTH0_ISSUER as string
     })
   ],
-  // secret: process.env.NEXTAUTH_SECRET as string,
+  secret: process.env.NEXTAUTH_SECRET as string,
   adapter: PrismaAdapter(prisma)
 }
 
