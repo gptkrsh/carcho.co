@@ -76,7 +76,7 @@ model MaintainanceVisit {
   id          String   @id @default(cuid())
   date        DateTime
   description String
-  cost        Float
+  cost        String
   car         Car      @relation(fields: [carId], references: [id], onDelete: Cascade)
   carId       String
   user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
